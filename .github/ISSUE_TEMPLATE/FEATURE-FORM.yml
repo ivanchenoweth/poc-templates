@@ -49,8 +49,8 @@ body:
   - type: checkboxes
     id: terms
     attributes:
-      label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com). 
+      label: Definition of Ready
+      description: it can be considered ready for development [Definition of Ready](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready). 
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

@@ -1,6 +1,6 @@
 # 🚀 Solicitud de Pull Request
 
-Gracias por tu contribución. Por favor, completa la siguiente información para ayudar al equipo a revisar y aprobar este PR de manera eficiente.
+Gracias por tu contribución. Por favor, completa la siguiente información para ayudar al equipo a revisar y aprobar este PR de manera eficiente...
 
 ---
 

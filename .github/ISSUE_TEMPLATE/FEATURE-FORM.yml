@@ -24,7 +24,7 @@ body:
       label: Description:
       description: Tell us, provide a high-level description of a software feature, and to group related scenarios:
       placeholder: We want : 
-      value: "Given: , When: , Then: , And:, But: for steps Scenario Outline 
+      value: "Given: , When: , Then: , And:, But for steps Scenario Outline 
     validations:
       required: true
   - type: dropdown
@@ -44,15 +44,15 @@ body:
       label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - Feature
-        - Epic
-        - PoC
-        - Spike
+        - Firefox
+        - Chrome
+        - Safari
+        - Microsoft Edge
   - type: textarea
-    id: testeable
+    id: logs
     attributes:
-      label: Testeable
-      description: In case this could be testeable, tell us the step to test this feature.
+      label: Expected log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes
     id: terms

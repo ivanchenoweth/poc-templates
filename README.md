@@ -9,8 +9,8 @@ https://docs.github.com/en/communities/using-templates-to-encourage-useful-issue
 
 https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/configuring-issue-templates-for-your-repository
 
-
 https://github.com/devspace/awesome-github-templates
 
 https://github.com/stevemao/github-issue-templates
 
+https://docs.github.com/en/communities/using-templates-to-encourage-useful-issues-and-pull-requests/creating-a-pull-request-template-for-your-repository

@@ -31,7 +31,7 @@ body:
     id: dor
     attributes:
       label: definition-of-ready
-      description: The story is clearly understood by the team, sufficiently detailed, all dependencies are identified?
+      description: The story is clearly understood by the team?
       options:
         - Yes
         - No 

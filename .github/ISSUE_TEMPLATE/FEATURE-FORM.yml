@@ -1,122 +1,122 @@
-name: Feature Request
-description: Submit a request for a new feature or improvement.
-title: "[Feature]: "
+name: Solicitud de Funcionalidad
+description: Envía una propuesta para una nueva funcionalidad o mejora.
+title: "[Funcionalidad]: "
 labels: [enhancement]
-assignees: []  # Optional: Add default assignees or leave empty
+assignees: []  # Opcional: puedes asignar por defecto a miembros del equipo
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🚀 Feature Request Template
-        Help us understand and prioritize your request by filling out the form below.
+        ## 🚀 Formulario de Solicitud de Funcionalidad
+        Ayúdanos a entender y priorizar tu solicitud completando el siguiente formulario.
 
   - type: input
     id: feature-summary
     attributes:
-      label: 📌 Feature Summary
-      placeholder: "e.g. Add dark mode toggle in user settings"
+      label: 📌 Resumen de la Funcionalidad
+      placeholder: "Ej: Añadir modo oscuro en la configuración de usuario"
     validations:
       required: true
 
   - type: textarea
     id: problem-statement
     attributes:
-      label: 🔍 Problem Statement
-      description: What user problem or opportunity does this feature address?
+      label: 🔍 Problema o Necesidad
+      description: ¿Qué problema estás tratando de resolver con esta funcionalidad?
       placeholder: |
-        e.g. Users working at night find the current UI too bright, which causes discomfort.
+        Ej: Los usuarios que trabajan de noche encuentran la interfaz muy brillante, causando molestias visuales.
     validations:
       required: true
 
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: ✅ Acceptance Criteria
+      label: ✅ Criterios de Aceptación
       description: |
-        List conditions that must be met for the feature to be accepted. Use checkboxes.
+        Lista las condiciones que deben cumplirse para que la funcionalidad se considere completada. Usa casillas de verificación.
       placeholder: |
-        - [ ] A toggle is available in settings
-        - [ ] Switching the toggle enables dark mode
-        - [ ] The preference is saved and persists on reload
+        - [ ] Hay un interruptor visible en la configuración
+        - [ ] Cambiar el interruptor activa el modo oscuro inmediatamente
+        - [ ] La preferencia se guarda y se mantiene entre sesiones
     validations:
       required: true
 
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: 🪜 Steps to Reproduce (if applicable)
+      label: 🪜 Pasos para Reproducir (si aplica)
       description: |
-        Include reproduction steps only if this request is related to fixing or enhancing an existing behavior.
+        Si esta funcionalidad mejora o corrige un comportamiento existente, incluye los pasos para reproducir el problema.
       placeholder: |
-        1. Open settings
-        2. Observe that there is no dark mode option
+        1. Ir a configuración
+        2. Observar que no existe una opción para activar el modo oscuro
     validations:
       required: false
 
   - type: dropdown
     id: priority
     attributes:
-      label: 🎯 Priority
-      description: How important is this feature to end users or the business?
+      label: 🎯 Prioridad
+      description: ¿Qué tan importante es esta funcionalidad para los usuarios o el negocio?
       options:
-        - High (must-have for MVP or major workflow)
-        - Medium (valuable but not urgent)
-        - Low (nice to have)
+        - Alta (esencial para MVP o flujos críticos)
+        - Media (valiosa pero no urgente)
+        - Baja (interesante, pero no imprescindible)
     validations:
       required: true
 
   - type: dropdown
     id: estimation
     attributes:
-      label: 🧮 Estimation (Fibonacci Scale)
-      description: Estimate the complexity or effort required. Use story points.
+      label: 🧮 Estimación (Escala Fibonacci)
+      description: Estima el esfuerzo o complejidad utilizando la escala de puntos de historia.
       options:
         - 0 (trivial)
-        - 1 (very small)
-        - 2 (small)
-        - 3 (medium)
-        - 5 (moderately complex)
-        - 8 (complex)
-        - 13 (very complex)
-        - 21 (epic level)
-        - ∞ (too large, needs to be split)
-        - ? (uncertain)
+        - 1 (muy pequeña)
+        - 2 (pequeña)
+        - 3 (media)
+        - 5 (moderadamente compleja)
+        - 8 (compleja)
+        - 13 (muy compleja)
+        - 21 (nivel épico)
+        - ∞ (demasiado grande, necesita dividirse)
+        - ? (incierta)
     validations:
       required: true
 
   - type: textarea
     id: business-value
     attributes:
-      label: 💡 Business Value / User Impact
-      description: What value does this feature bring to users or the organization?
+      label: 💡 Valor para el Negocio / Impacto en el Usuario
+      description: ¿Qué valor aporta esta funcionalidad a los usuarios o al proyecto?
       placeholder: |
-        Improves accessibility for users in dark environments and reduces eye strain.
+        Mejora la accesibilidad para usuarios que trabajan en entornos con poca luz y reduce la fatiga visual.
     validations:
       required: false
 
   - type: textarea
     id: screenshots
     attributes:
-      label: 🖼️ Screenshots / Mockups
-      description: Add visual references to clarify the request.
-      placeholder: "Drag and drop images or paste links to mockups here."
+      label: 🖼️ Capturas de Pantalla / Mockups
+      description: Añade referencias visuales que ayuden a entender mejor la solicitud.
+      placeholder: "Puedes subir imágenes arrastrándolas aquí o pegar enlaces a diseños."
     validations:
       required: false
 
   - type: textarea
     id: additional-context
     attributes:
-      label: 📎 Additional Context
-      description: Any other relevant info, blockers, or related issues/PRs?
+      label: 📎 Contexto Adicional
+      description: ¿Hay información relevante, bloqueos, vínculos a issues relacionados u otros detalles que debamos considerar?
     validations:
       required: false
 
   - type: checkboxes
     id: definition-of-ready
     attributes:
-      label: 🧾 Definition of Ready Confirmation
+      label: 🧾 Confirmación de la Definición de Listo
       description: |
-        Please confirm that this request meets our [Definition of Ready](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/).
+        Por favor, confirma que esta solicitud cumple con nuestra [Definición de Listo](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/).
       options:
-        - label: I confirm this feature meets our Definition of Ready and contains sufficient detail for estimation and implementation.
+        - label: Confirmo que esta funcionalidad cumple con la Definición de Listo y contiene suficiente detalle para ser estimada e implementada.
           required: true

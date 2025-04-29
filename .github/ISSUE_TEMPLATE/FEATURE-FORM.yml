@@ -21,10 +21,10 @@ body:
   - type: textarea
     id: what-description
     attributes:
-      label: Description
+      label: Description:
       description: Tell us, provide a high-level description of a software feature, and to group related scenarios:
       placeholder: Tell us what you want!
-      value: "Given, When, Then, And, But"
+      value: "A bug happened!"
     validations:
       required: true
   - type: dropdown

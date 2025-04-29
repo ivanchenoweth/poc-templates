@@ -41,24 +41,24 @@ body:
       options:
         - Feature
         - Epic
-        - 
+        - Safari
         - Microsoft Edge
   - type: textarea
-      id: acceptance-criteria
-      attributes:
-        label: Acceptance Criteria
-        description: |
-          Define the conditions that must be met for this feature to be accepted.
-          Example:
-          - [ ] A toggle is visible in settings
-          - [ ] Toggling switches the theme
-          - [ ] Theme preference persists across sessions
-        placeholder: |
-          - [ ] A toggle is visible in settings
-          - [ ] Toggling switches the theme
-          - [ ] Theme preference persists across sessions
-      validations:
-        required: true
+    id: acceptance-criteria
+    attributes:
+      label: Acceptance Criteria
+      description: |
+        Define the conditions that must be met for this feature to be accepted.
+        Example:
+        - [ ] A toggle is visible in settings
+        - [ ] Toggling switches the theme
+        - [ ] Theme preference persists across sessions
+      placeholder: |
+        - [ ] A toggle is visible in settings
+        - [ ] Toggling switches the theme
+        - [ ] Theme preference persists across sessions
+    validations:
+      required: true
   - type: checkboxes
     id: terms
     attributes:

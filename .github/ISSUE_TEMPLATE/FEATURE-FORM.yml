@@ -1,6 +1,6 @@
 name: Feature Form
 description: File a feature issue.
-title: "Feat: "
+title: "feat/: new funcionality"
 labels: ["enhancenment"]
 projects: ["octo-org/1", "octo-org/44"]
 assignees:
@@ -52,5 +52,5 @@ body:
       label: Definition of Ready
       description: it can be considered ready for development [Definition of Ready](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready). 
       options:
-        - label: I agree to follow this project's Code of Conduct
+        - label: I agree to acceptance the Definition of Ready issue's
           required: true

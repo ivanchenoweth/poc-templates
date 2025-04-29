@@ -12,7 +12,7 @@ Describe brevemente qué cambios introduces con este PR.
 
 ---
 
-## 🔍 Tipo de Cambio
+## 🔍 Tipo de Cambio realizado
 
 Marca con una `x` lo que aplica:
 

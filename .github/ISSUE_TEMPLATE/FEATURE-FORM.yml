@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this featureform!
+        Thanks for taking the time to fill out this feature form!
   - type: input
     id: contact
     attributes:
@@ -19,22 +19,22 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what-description
     attributes:
-      label: What happened?
-      description: Also tell us, what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Description:
+      description: Tell us, provide a high-level description of a software feature, and to group related scenarios:
+      placeholder: We want : 
+      value: "Given: , When: , Then: , And:, But: for steps Scenario Outline 
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: definition-of-ready
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: definition
+      description: he story is clearly understood by the team?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - Yes
+        - Not Yet
       default: 0
     validations:
       required: true
@@ -44,15 +44,15 @@ body:
       label: What browsers are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Feature
+        - Epic
+        - PoC
+        - Spike
   - type: textarea
-    id: logs
+    id: testeable
     attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      label: Testeable
+      description: In case this could be testeable, tell us the step to test this feature.
       render: shell
   - type: checkboxes
     id: terms

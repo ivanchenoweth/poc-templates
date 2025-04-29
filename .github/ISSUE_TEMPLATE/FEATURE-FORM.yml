@@ -110,3 +110,15 @@ body:
       description: Any other relevant info, blockers, or related issues/PRs?
     validations:
       required: false
+
+
+ - type: checkboxes
+    id: definition-of-ready
+    attributes:
+      label: 🧾 Definition of Ready Confirmation
+      description: |
+        Please confirm that this request meets our [Definition of Ready](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/).
+      options:
+        - label: I confirm this feature meets our Definition of Ready and contains sufficient detail for estimation and implementation.
+          required: true
+          

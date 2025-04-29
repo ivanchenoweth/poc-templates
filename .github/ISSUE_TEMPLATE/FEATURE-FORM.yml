@@ -13,20 +13,23 @@ body:
   - type: textarea
     id: what-description
     attributes:
-      label: What is the description?
+      label: Description
       description: High-level description of a software feature
       placeholder: Tell us what you want!
-      value: "We want "
+      value: "We want to have "
     validations:
       required: true
   - type: dropdown
-    id: version
+    id: estimation
     attributes:
-      label: Version
-      description: What version of our software are you running?
+      label: Estimation
+      description: What Estimation points?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - 1
+        - 2
+        - 3
+        - 5
+        - 8
       default: 0
     validations:
       required: true

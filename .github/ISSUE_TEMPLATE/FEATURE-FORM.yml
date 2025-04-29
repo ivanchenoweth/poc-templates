@@ -19,9 +19,9 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-happened
+    id: what-description
     attributes:
-      label: What happened?
+      label: Description
       description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"

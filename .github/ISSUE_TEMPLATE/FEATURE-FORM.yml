@@ -24,7 +24,7 @@ body:
       label: Description
       description: Tell us, provide a high-level description of a software feature, and to group related scenarios:
       placeholder: Tell us what you want!
-      value: "Given, When, Then, And, But "
+      value: "Given, When, Then, And, But"
     validations:
       required: true
   - type: dropdown

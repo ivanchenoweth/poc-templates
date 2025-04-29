@@ -17,13 +17,14 @@ body:
       placeholder: "Ej: Añadir modo oscuro en la configuración de usuario"
       description: |
         Describe brevemente la funcionalidad que estás solicitando.
+
   - type: textarea
     id: problem-statement
     attributes:
       label: 🔍 Problema o Necesidad
       description: |
         ¿Qué problema estás tratando de resolver con esta funcionalidad?  
-        Referencia: [Problem Statements – Interaction Design Foundation](https://www.interaction-design.org/literature/article/how-to-define-a-problem-statement)
+        Para más detalles, consulta el [enlace oficial sobre el estado del problema](https://www.interaction-design.org/literature/article/how-to-define-a-problem-statement) (Haz clic derecho para abrir en una nueva pestaña).
       placeholder: |
         Ej: Los usuarios que trabajan de noche encuentran la interfaz muy brillante, causando molestias visuales.
     validations:
@@ -34,8 +35,8 @@ body:
     attributes:
       label: ✅ Criterios de Aceptación
       description: |
-        Lista condiciones que deben cumplirse para considerar la funcionalidad como completada.  
-        Referencia: [Acceptance Criteria – Atlassian](https://www.atlassian.com/agile/project-management/user-stories#Acceptance-criteria)
+        Lista las condiciones que deben cumplirse para considerar la funcionalidad como completada.  
+        Para más información, revisa [Acceptance Criteria – Atlassian](https://www.atlassian.com/agile/project-management/user-stories#Acceptance-criteria) (Haz clic derecho para abrir en una nueva pestaña).
       placeholder: |
         - [ ] Hay un interruptor visible en la configuración
         - [ ] Cambiar el interruptor activa el modo oscuro inmediatamente
@@ -49,7 +50,7 @@ body:
       label: 🪜 Pasos para Reproducir (si aplica)
       description: |
         Si la solicitud mejora o corrige un comportamiento, proporciona pasos detallados para reproducirlo.  
-        Referencia: [Cómo redactar un buen informe de errores – GitHub Docs](https://docs.github.com/es/issues/tracking-your-work-with-issues/creating-issues/about-issues)
+        Más detalles en [Cómo redactar un buen informe de errores – GitHub Docs](https://docs.github.com/es/issues/tracking-your-work-with-issues/creating-issues/about-issues) (Haz clic derecho para abrir en una nueva pestaña).
       placeholder: |
         1. Ir a configuración  
         2. Observar que no existe una opción para activar el modo oscuro
@@ -62,7 +63,7 @@ body:
       label: 🎯 Prioridad
       description: |
         Selecciona la importancia de esta funcionalidad.  
-        Referencia: [Priorización en Scrum – Scrum.org](https://www.scrum.org/resources/blog/ordering-product-backlog)
+        Más detalles sobre cómo priorizar tareas en [Priorización en Scrum – Scrum.org](https://www.scrum.org/resources/blog/ordering-product-backlog) (Haz clic derecho para abrir en una nueva pestaña).
       options:
         - Alta (esencial para MVP o flujos críticos)
         - Media (valiosa pero no urgente)
@@ -76,7 +77,7 @@ body:
       label: 🧮 Estimación (Escala Fibonacci)
       description: |
         Estima el esfuerzo usando puntos de historia según la escala de Fibonacci.  
-        Referencia: [Fibonacci Estimation in Agile – Mountain Goat Software](https://www.mountaingoatsoftware.com/blog/why-do-we-use-the-fibonacci-sequence-for-story-points)
+        Más información en [Fibonacci Estimation in Agile – Mountain Goat Software](https://www.mountaingoatsoftware.com/blog/why-do-we-use-the-fibonacci-sequence-for-story-points) (Haz clic derecho para abrir en una nueva pestaña).
       options:
         - 0 (trivial)
         - 1 (muy pequeña)
@@ -97,7 +98,7 @@ body:
       label: 💡 Valor para el Negocio / Impacto en el Usuario
       description: |
         Explica el valor que aporta esta funcionalidad.  
-        Referencia: [Business Value Definition – Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/wsjf/)
+        Más detalles en [Business Value Definition – Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/wsjf/) (Haz clic derecho para abrir en una nueva pestaña).
       placeholder: |
         Mejora la accesibilidad y reduce la fatiga visual en entornos con poca luz.
     validations:
@@ -109,7 +110,7 @@ body:
       label: 🖼️ Capturas de Pantalla / Mockups
       description: |
         Añade imágenes o referencias visuales para mayor claridad.  
-        Referencia: [Imágenes en Markdown – GitHub Docs](https://docs.github.com/es/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+        Para más detalles, consulta [Imágenes en Markdown – GitHub Docs](https://docs.github.com/es/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables) (Haz clic derecho para abrir en una nueva pestaña).
       placeholder: "Arrastra aquí las imágenes o pega enlaces a mockups."
     validations:
       required: false
@@ -128,7 +129,7 @@ body:
     attributes:
       label: 🧾 Confirmación de la Definición de Listo
       description: |
-        Por favor, confirma que esta solicitud cumple con nuestra [Definición de Listo](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/).
+        Por favor, confirma que esta solicitud cumple con nuestra [Definición de Listo](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/) (Haz clic derecho para abrir en una nueva pestaña).
       options:
         - label: Confirmo que esta funcionalidad cumple con la Definición de Listo y contiene suficiente detalle para ser estimada e implementada.
           required: true

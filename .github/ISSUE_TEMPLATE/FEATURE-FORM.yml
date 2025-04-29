@@ -1,5 +1,5 @@
 name: Feature Form
-description: File a feature issue.
+description: File a feature report.
 title: "[Feat]: "
 labels: ["enhancenment"]
 projects: ["octo-org/1", "octo-org/44"]
@@ -9,7 +9,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Thanks for taking the time to fill out this feature form!
+        Thanks for taking the time to fill out this featureform!
   - type: input
     id: contact
     attributes:
@@ -19,10 +19,10 @@ body:
     validations:
       required: false
   - type: textarea
-    id: what-description
+    id: what-happened
     attributes:
-      label: Description:
-      description: Tell us, provide a high-level description of a software feature, and to group related scenarios:
+      label: What happened?
+      description: Also tell us, what did you expect to happen?
       placeholder: Tell us what you see!
       value: "A bug happened!"
     validations:
@@ -51,7 +51,7 @@ body:
   - type: textarea
     id: logs
     attributes:
-      label: Expected log output
+      label: Relevant log output
       description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
       render: shell
   - type: checkboxes

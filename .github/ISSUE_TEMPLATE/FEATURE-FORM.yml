@@ -2,19 +2,18 @@ name: Feature Request
 description: Submit a request for a new feature or improvement.
 title: "[Feature]: "
 labels: [enhancement]
-assignees:
-  - your-github-username  # Optional: remove or replace
+assignees: []  # Optional: Add default assignees or leave empty
 body:
   - type: markdown
     attributes:
       value: |
-        ## 🚀 Feature Request Form
-        Please fill out the following fields to help us understand your request.
+        ## 🚀 Feature Request Template
+        Help us understand and prioritize your request by filling out the form below.
 
   - type: input
     id: feature-summary
     attributes:
-      label: Feature Summary
+      label: 📌 Feature Summary
       placeholder: "e.g. Add dark mode toggle in user settings"
     validations:
       required: true
@@ -22,78 +21,92 @@ body:
   - type: textarea
     id: problem-statement
     attributes:
-      label: Problem Statement
-      description: What problem are you trying to solve with this feature?
+      label: 🔍 Problem Statement
+      description: What user problem or opportunity does this feature address?
       placeholder: |
-        e.g. Users are experiencing eye strain using the current bright theme at night.
+        e.g. Users working at night find the current UI too bright, which causes discomfort.
     validations:
       required: true
 
   - type: textarea
     id: acceptance-criteria
     attributes:
-      label: Acceptance Criteria
+      label: ✅ Acceptance Criteria
       description: |
-        Define the conditions that must be met for the feature to be considered complete.
-        Use checkboxes to list each criterion.
+        List conditions that must be met for the feature to be accepted. Use checkboxes.
       placeholder: |
-        - [ ] A dark mode toggle is visible in settings
-        - [ ] Dark mode applies instantly without refresh
-        - [ ] Preference is saved and persists across sessions
+        - [ ] A toggle is available in settings
+        - [ ] Switching the toggle enables dark mode
+        - [ ] The preference is saved and persists on reload
     validations:
       required: true
 
   - type: textarea
     id: steps-to-reproduce
     attributes:
-      label: Steps to Reproduce (if applicable)
+      label: 🪜 Steps to Reproduce (if applicable)
       description: |
-        If this feature addresses a recurring problem, include the steps to replicate the issue.
+        Include reproduction steps only if this request is related to fixing or enhancing an existing behavior.
       placeholder: |
-        1. Go to settings
-        2. Try to find theme options
-        3. No toggle available for dark mode
+        1. Open settings
+        2. Observe that there is no dark mode option
     validations:
       required: false
 
   - type: dropdown
     id: priority
     attributes:
-      label: Priority
-      description: How urgent or important is this feature?
+      label: 🎯 Priority
+      description: How important is this feature to end users or the business?
       options:
-        - High (critical to user needs or functionality)
-        - Medium (important but not urgent)
+        - High (must-have for MVP or major workflow)
+        - Medium (valuable but not urgent)
         - Low (nice to have)
+    validations:
+      required: true
+
+  - type: dropdown
+    id: estimation
+    attributes:
+      label: 🧮 Estimation (Fibonacci Scale)
+      description: Estimate the complexity or effort required. Use story points.
+      options:
+        - 0 (trivial)
+        - 1 (very small)
+        - 2 (small)
+        - 3 (medium)
+        - 5 (moderately complex)
+        - 8 (complex)
+        - 13 (very complex)
+        - 21 (epic level)
+        - ∞ (too large, needs to be split)
+        - ? (uncertain)
     validations:
       required: true
 
   - type: textarea
     id: business-value
     attributes:
-      label: Business Value / User Impact
-      description: |
-        Describe the value this feature brings to the project or users.
+      label: 💡 Business Value / User Impact
+      description: What value does this feature bring to users or the organization?
       placeholder: |
-        Improves accessibility for users working in low-light environments.
+        Improves accessibility for users in dark environments and reduces eye strain.
     validations:
       required: false
 
   - type: textarea
     id: screenshots
     attributes:
-      label: Screenshots / Mockups
-      description: |
-        Add any visual references that may help understand the request.
-      placeholder: "You can upload images by dragging and dropping them here."
+      label: 🖼️ Screenshots / Mockups
+      description: Add visual references to clarify the request.
+      placeholder: "Drag and drop images or paste links to mockups here."
     validations:
       required: false
 
   - type: textarea
     id: additional-context
     attributes:
-      label: Additional Context
-      description: |
-        Any other information, links, dependencies, or blockers to consider?
+      label: 📎 Additional Context
+      description: Any other relevant info, blockers, or related issues/PRs?
     validations:
       required: false

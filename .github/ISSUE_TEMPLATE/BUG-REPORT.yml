@@ -1,6 +1,6 @@
 name: Reporte de Error
 description: Envía un reporte detallado sobre un error encontrado en la aplicación.
-title: "[Error]: "
+title: "[Bug]: "
 labels: [bug]
 assignees: 
   - ""  # Asignación manual o con GitHub Actions

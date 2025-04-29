@@ -1,6 +1,6 @@
 name: Solicitud de Funcionalidad
 description: Envía una propuesta para una nueva funcionalidad o mejora.
-title: "[Funcionalidad]: "
+title: "[feat]: "
 labels: [enhancement]
 assignees: 
   - ${{ github.actor }}  # Asigna automáticamente al creador del formulario

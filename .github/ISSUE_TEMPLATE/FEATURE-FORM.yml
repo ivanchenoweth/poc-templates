@@ -23,18 +23,18 @@ body:
     attributes:
       label: Description:
       description: Tell us, provide a high-level description of a software feature, and to group related scenarios:
-      placeholder: We want : 
-      value: "Given: , When: , Then: , And:, But for steps Scenario Outline 
+      placeholder: Tell us what you see!
+      value: "A bug happened!"
     validations:
       required: true
   - type: dropdown
-    id: definition-of-ready
+    id: version
     attributes:
-      label: definition
-      description: he story is clearly understood by the team?
+      label: Version
+      description: What version of our software are you running?
       options:
-        - Yes
-        - Not Yet
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
       default: 0
     validations:
       required: true

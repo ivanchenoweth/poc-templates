@@ -41,10 +41,10 @@ body:
         - Safari
         - Microsoft Edge
   - type: textarea
-    id: testeable
+    id: acceptance-criteria
     attributes:
-      label: Testeable
-      description: Explain the testeable steps to verify the feature is working.
+      label: Acceptance Cirteria
+      description: Explain steps to verify the feature is working.
       render: shell
   - type: checkboxes
     id: terms

@@ -31,10 +31,10 @@ body:
     id: dor
     attributes:
       label: definition-of-ready
-      description: The story is clearly understood by the team?
+      description: What version of our software are you running?
       options:
-        - Yes
-        - No 
+        - 1.0.2 (Default)
+        - 1.0.3 (Edge)
       default: 0
     validations:
       required: true

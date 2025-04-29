@@ -12,6 +12,16 @@ body:
         Completa este formulario con la mayor cantidad de detalles posible para que podamos reproducir y corregir el error.
 
   - type: input
+    id: reporter-user
+    attributes:
+      label: 🧑‍💻 Usuario que Reportó el Error
+      placeholder: "Ej: juanperez"
+      description: |
+        Proporciona el nombre de usuario o identificador de la persona que reporta el error. Si es el creador del reporte, puede dejar este campo vacío, ya que se auto-asignará automáticamente.
+    validations:
+      required: false
+
+  - type: input
     id: bug-summary
     attributes:
       label: 📌 Resumen del Error
@@ -126,4 +136,26 @@ body:
         Esto puede incluir mensajes de error, trazas de pila, etc.
         Más detalles sobre cómo encontrar registros en [Cómo obtener los registros de la consola](https://developer.mozilla.org/es/docs/Tools/Web_Console) (Haz clic derecho para abrir en una nueva pestaña).
       placeholder: |
-        Error de JavaScript: "Uncaught TypeError: Cannot read property
+        Error de JavaScript: "Uncaught TypeError: Cannot read property 'x' of undefined"
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-context
+    attributes:
+      label: 📎 Contexto Adicional
+      description: |
+        Proporciona cualquier otra información relevante sobre el error o los pasos que has seguido antes de que ocurriera.  
+        Esto puede ayudar a los desarrolladores a identificar patrones y posibles causas del problema.
+    validations:
+      required: false
+
+  - type: checkboxes
+    id: definition-of-ready
+    attributes:
+      label: 🧾 Confirmación de la Definición de Listo
+      description: |
+        Por favor, confirma que esta solicitud cumple con nuestra [Definición de Listo](https://microsoft.github.io/code-with-engineering-playbook/agile-development/team-agreements/definition-of-ready/) (Haz clic derecho para abrir en una nueva pestaña).
+      options:
+        - label: Confirmo que esta solicitud contiene suficiente información para ser investigada y corregida.
+          required: true

@@ -28,7 +28,7 @@ body:
     validations:
       required: true
   - type: dropdown
-    id: dor
+    id: version
     attributes:
       label: Version
       description: What version of our software are you running?

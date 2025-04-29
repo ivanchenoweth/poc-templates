@@ -2,27 +2,28 @@ name: Solicitud de Funcionalidad
 description: Envía una propuesta para una nueva funcionalidad o mejora.
 title: "[Funcionalidad]: "
 labels: [enhancement]
-assignees: []  # Opcional: puedes asignar por defecto a miembros del equipo
+assignees: []
 body:
   - type: markdown
     attributes:
       value: |
         ## 🚀 Formulario de Solicitud de Funcionalidad
-        Ayúdanos a entender y priorizar tu solicitud completando el siguiente formulario.
+        Completa este formulario siguiendo las buenas prácticas de desarrollo ágil.
 
   - type: input
     id: feature-summary
     attributes:
       label: 📌 Resumen de la Funcionalidad
       placeholder: "Ej: Añadir modo oscuro en la configuración de usuario"
-    validations:
-      required: true
-
+      description: |
+        Describe brevemente la funcionalidad que estás solicitando.
   - type: textarea
     id: problem-statement
     attributes:
       label: 🔍 Problema o Necesidad
-      description: ¿Qué problema estás tratando de resolver con esta funcionalidad?
+      description: |
+        ¿Qué problema estás tratando de resolver con esta funcionalidad?  
+        Referencia: [Problem Statements – Interaction Design Foundation](https://www.interaction-design.org/literature/article/how-to-define-a-problem-statement)
       placeholder: |
         Ej: Los usuarios que trabajan de noche encuentran la interfaz muy brillante, causando molestias visuales.
     validations:
@@ -33,7 +34,8 @@ body:
     attributes:
       label: ✅ Criterios de Aceptación
       description: |
-        Lista las condiciones que deben cumplirse para que la funcionalidad se considere completada. Usa casillas de verificación.
+        Lista condiciones que deben cumplirse para considerar la funcionalidad como completada.  
+        Referencia: [Acceptance Criteria – Atlassian](https://www.atlassian.com/agile/project-management/user-stories#Acceptance-criteria)
       placeholder: |
         - [ ] Hay un interruptor visible en la configuración
         - [ ] Cambiar el interruptor activa el modo oscuro inmediatamente
@@ -46,9 +48,10 @@ body:
     attributes:
       label: 🪜 Pasos para Reproducir (si aplica)
       description: |
-        Si esta funcionalidad mejora o corrige un comportamiento existente, incluye los pasos para reproducir el problema.
+        Si la solicitud mejora o corrige un comportamiento, proporciona pasos detallados para reproducirlo.  
+        Referencia: [Cómo redactar un buen informe de errores – GitHub Docs](https://docs.github.com/es/issues/tracking-your-work-with-issues/creating-issues/about-issues)
       placeholder: |
-        1. Ir a configuración
+        1. Ir a configuración  
         2. Observar que no existe una opción para activar el modo oscuro
     validations:
       required: false
@@ -57,7 +60,9 @@ body:
     id: priority
     attributes:
       label: 🎯 Prioridad
-      description: ¿Qué tan importante es esta funcionalidad para los usuarios o el negocio?
+      description: |
+        Selecciona la importancia de esta funcionalidad.  
+        Referencia: [Priorización en Scrum – Scrum.org](https://www.scrum.org/resources/blog/ordering-product-backlog)
       options:
         - Alta (esencial para MVP o flujos críticos)
         - Media (valiosa pero no urgente)
@@ -69,7 +74,9 @@ body:
     id: estimation
     attributes:
       label: 🧮 Estimación (Escala Fibonacci)
-      description: Estima el esfuerzo o complejidad utilizando la escala de puntos de historia.
+      description: |
+        Estima el esfuerzo usando puntos de historia según la escala de Fibonacci.  
+        Referencia: [Fibonacci Estimation in Agile – Mountain Goat Software](https://www.mountaingoatsoftware.com/blog/why-do-we-use-the-fibonacci-sequence-for-story-points)
       options:
         - 0 (trivial)
         - 1 (muy pequeña)
@@ -88,9 +95,11 @@ body:
     id: business-value
     attributes:
       label: 💡 Valor para el Negocio / Impacto en el Usuario
-      description: ¿Qué valor aporta esta funcionalidad a los usuarios o al proyecto?
+      description: |
+        Explica el valor que aporta esta funcionalidad.  
+        Referencia: [Business Value Definition – Scaled Agile Framework (SAFe)](https://www.scaledagileframework.com/wsjf/)
       placeholder: |
-        Mejora la accesibilidad para usuarios que trabajan en entornos con poca luz y reduce la fatiga visual.
+        Mejora la accesibilidad y reduce la fatiga visual en entornos con poca luz.
     validations:
       required: false
 
@@ -98,8 +107,10 @@ body:
     id: screenshots
     attributes:
       label: 🖼️ Capturas de Pantalla / Mockups
-      description: Añade referencias visuales que ayuden a entender mejor la solicitud.
-      placeholder: "Puedes subir imágenes arrastrándolas aquí o pegar enlaces a diseños."
+      description: |
+        Añade imágenes o referencias visuales para mayor claridad.  
+        Referencia: [Imágenes en Markdown – GitHub Docs](https://docs.github.com/es/get-started/writing-on-github/working-with-advanced-formatting/organizing-information-with-tables)
+      placeholder: "Arrastra aquí las imágenes o pega enlaces a mockups."
     validations:
       required: false
 
@@ -107,7 +118,8 @@ body:
     id: additional-context
     attributes:
       label: 📎 Contexto Adicional
-      description: ¿Hay información relevante, bloqueos, vínculos a issues relacionados u otros detalles que debamos considerar?
+      description: |
+        Proporciona cualquier otra información relevante o vínculos relacionados.
     validations:
       required: false
 
